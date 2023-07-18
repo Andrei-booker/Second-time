@@ -79,7 +79,7 @@ body {
     display: none;
 }
 .title-1::before {
-    content: url('/Макет\ 1.3/img/highlight-mobile.svg');
+    content: url('/Macket-1.3\ 1.3/img/highlight-mobile.svg');
     position: absolute;
     margin-right: 12px;
     left: 0;
@@ -170,7 +170,7 @@ body {
 }
 
 .description__button--read-more::before{
-    content: url('/Макет 1.3/img/ic 4/icon.svg');
+    content: url('/Macket-1.3/img/ic 4/icon.svg');
     position:absolute;
     left: 0px;
 }
@@ -272,7 +272,7 @@ body {
     }
 
     .title-1::before {
-        content: url('/Макет\ 1.3/img/highlight.svg');
+        content: url('/Macket-1.3/img/highlight.svg');
     }
 
     .title-1 {
@@ -295,6 +295,7 @@ body {
     }
 
     .content__link-text {
+        color: black;
         margin-right: 8px;
         display: flex;
         align-items: center;
