@@ -170,7 +170,7 @@ body {
 }
 
 .description__button--read-more::before{
-    content: url('img/ic 4/icon.svg');
+    content: url('img/ic-4/icon.svg');
     position:absolute;
     left: 0px;
 }
