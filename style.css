@@ -1,7 +1,12 @@
 @font-face {
     font-family: 'TT Lakes';
     src: url('TTLakes-Italic.eot');
-    src: local('TT Lakes');
+    src: local('TT Lakes Italic'), local('TTLakes-Italic'),
+        url('TTLakes-Italic.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Italic.woff') format('woff'),
+        url('TTLakes-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 html {
