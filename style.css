@@ -181,7 +181,7 @@ body {
 }
 
 .description__image--size {
-    width: 320px;
+    max-width: 320px;
 }
 
 @media (min-width: 321px) and (max-width: 784px) {
@@ -248,6 +248,7 @@ body {
 
     .description {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .description__all-p {
@@ -257,7 +258,7 @@ body {
     }
 
     .description__image--size {
-        width: 360px;
+        max-width: 360px;
     }
 }
 
