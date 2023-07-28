@@ -29,6 +29,7 @@ html {
 body {
     font-family: 'TT Lakes';
     margin: 0;
+    min-width: 320px;
 }
 
 .header {
@@ -116,7 +117,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     height: 1px;
     background: #D9FFF5;
     top: 87px;
@@ -197,11 +198,6 @@ body {
 
 @media (min-width: 321px) and (max-width: 784px) {
 
-    body {
-        max-width: 784px;
-        max-height: 504px;
-    }
-
     .button-nav--menu {
         margin-right: 40px;
         margin-left: 24px;
@@ -235,9 +231,8 @@ body {
     }
 
     .header__rigth-buttons {
-        width: 600px;
         display: flex;
-        justify-content: flex-end;
+        margin-left: auto;
     }
 
     .logo {
@@ -247,10 +242,6 @@ body {
     .title-1 {
         margin-bottom: 32px;
         margin-left: 24px;
-    }
-
-    .content {
-        width: 100%;
     }
 
     .content__link:first-child {
@@ -264,7 +255,6 @@ body {
 
     .description__all-p {
         margin-left: 8px;
-        max-width: 320px;
         margin-right: 48px;
     }
 
