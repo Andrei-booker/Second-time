@@ -231,7 +231,6 @@ body {
     }
 
     .header__rigth-buttons {
-        display: flex;
         margin-left: auto;
     }
 
