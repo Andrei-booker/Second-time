@@ -201,53 +201,42 @@ body {
 
     .header__left-buttons {
         display: flex;
-        justify-content: space-between;
-        width: auto;
+        justify-content: start;
+        /* width: auto; */
     }
 
     .button-nav--menu {
-        /* margin-right: 40px; */
+        margin-right: 42px;
         margin-left: 24px;
         position: relative;
     }
     .button-nav--menu::after {
         content: url(img/divider.svg);
         position: absolute;
-        cursor: auto;
-        right: -20px;
+        pointer-events: none;
+        left: 60px;
         top: 4px;
     }
 
-    .button-nav--call, .button-nav--chat, .button-nav--profile {
-        display: block;
-        /* margin-left: 16px; */
-    }
-
     .button-nav--check-status {
+        margin-right: 24px;
+    }
+
+    .button-nav--repair, .button-nav--chat, .button-nav--call {
+        margin-right: 16px;
+    }
+
+    .button-nav--profile {
         margin-right: 40px;
-        margin-left: 16px;
-    }
-
-    .button-nav--repair {
-        margin-right: 0;
-        /* margin-left: 42px; */
-    }
-
-    .header__rigth-buttons {
-        /* margin-left: auto; */
-    }
-
-    .logo {
-        /* margin-right: 0; */
+        margin-bottom: 32px;
     }
 
     .title-1 {
-        /* margin-bottom: 32px;
-        margin-left: 24px; */
+        padding-left: 24px;
     }
 
     .content__link:first-child {
-        /* margin-left: 24px; */
+        margin-left: 24px;
     }
 
     .description {
@@ -257,12 +246,18 @@ body {
 
     .description__all-p {
         width: 50%;
-        /* margin-left: 8px;
-        margin-right: 48px; */
+        padding-left: 24px;
+        padding-right: 48px;
+        margin: 0;
+    }
+
+    .description__p2 {
+        margin-bottom: 10px;
     }
 
     .description__image {
         width: 50%;
+        padding-right: 24px;
     }
 }
 
@@ -286,8 +281,9 @@ body {
     }
 
     .title-1 {
-        margin-top: 42px;
-        margin-left: 34px;
+        padding-top: 42px;
+        padding-left: 32px;
+        margin-bottom: 8px;
     }
 
     .contetnt__link--repair, .content__link--check-status {
@@ -332,20 +328,16 @@ body {
         padding-left: 32px;
     }
 
-    .description {
-        display: flex;
-    }
-
-    .description__image--size {
-        /* max-width: 532px; */
-    }
-
     .description__image {
-        margin-right: 28px;
+        padding-right: 28px;
     }
 
     .description__all-p {
-        margin-left: 18px;
-        margin-right: 12px;
+        padding-left: 34px;
+        padding-right: 36px;
+    }
+
+    .description__p2 {
+        margin-bottom: 14px;
     }
 }
