@@ -80,8 +80,6 @@ body {
 
 .logo {
     margin-right: auto;
-    width: 96px;
-    height: 50px;
 }
 .title-1 {
     margin: 0;
@@ -144,24 +142,20 @@ body {
     /* padding: 0 16px 0  0; */
     margin-bottom: 16px;
 }
-.description__p1 {
+.description__p1, .description__p2 {
     margin: 0;
     margin-bottom: 16px;
 }
 
-.description__p2 {
-    margin: 0;
-}
-
 .button--read-more {
     cursor: pointer;
+    display: block;
     border: none;
     font-family: 'TT Lakes';
     font-size: 16px;
     background: transparent;
     position: relative;
     padding-left: 32px;
-    margin-bottom: 16px;
 }
 
 .button--read-more::before{
@@ -170,7 +164,7 @@ body {
     left: 8px;
 }
 
-.description__image--size {
+.description__image {
     width: 100%;
 }
 
@@ -187,18 +181,12 @@ body {
 @media (min-width: 768px) {
 
     .header {
-        justify-content: space-between;
-    }
-
-    .header__left-buttons {
-        display: flex;
-        justify-content: start;
-        /* width: auto; */
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .button-nav--menu {
         margin-right: 42px;
-        margin-left: 24px;
         position: relative;
     }
     .button-nav--menu::after {
@@ -209,25 +197,17 @@ body {
         top: 4px;
     }
 
-    .button-nav--check-status {
-        margin-right: 24px;
-    }
-
     .button-nav--repair, .button-nav--chat, .button-nav--call {
         margin-right: 16px;
     }
 
     .button-nav--profile {
         margin-right: 40px;
-        margin-bottom: 32px;
     }
 
-    .title-1 {
+    .content {
         padding-left: 24px;
-    }
-
-    .content__link:first-child {
-        margin-left: 24px;
+        padding-right: 24px;
     }
 
     .description {
@@ -237,7 +217,6 @@ body {
 
     .description__all-p {
         width: 50%;
-        padding-left: 24px;
         padding-right: 48px;
         margin: 0;
     }
@@ -248,7 +227,6 @@ body {
 
     .description__image {
         width: 50%;
-        padding-right: 24px;
     }
 }
 
@@ -264,7 +242,11 @@ body {
 
     .content__top-box {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        padding-top: 42px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 8px;
     }
 
     .title-1::before {
@@ -272,21 +254,26 @@ body {
     }
 
     .title-1 {
-        padding-top: 42px;
-        padding-left: 32px;
-        margin-bottom: 8px;
+        margin-right: auto;
+        margin-bottom: 0;
     }
 
-    .contetnt__link--repair, .content__link--check-status {
+    .contetnt__link--repair {
         display: flex;
+        align-items: center;
         margin-right: 32px;
         text-decoration: none;
         height: 40px;
     }
 
-    .content__links {
+    .content__link--check-status {
         display: flex;
         align-items: center;
+        text-decoration: none;
+        height: 40px;
+    }
+
+    .content__links {
         height: 88px;
         padding-top: 30px;
     }
@@ -294,8 +281,8 @@ body {
     .content__link-text {
         color: black;
         margin-right: 8px;
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
     }
 
     .content__link:first-child{
