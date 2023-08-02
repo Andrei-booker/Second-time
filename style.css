@@ -258,19 +258,27 @@ body {
         margin-bottom: 0;
     }
 
-    .contetnt__link--repair {
+    .contetnt__button--repair {
         display: flex;
+        background: none;
+        border: none;
+        cursor: pointer;
         align-items: center;
         margin-right: 32px;
         text-decoration: none;
         height: 40px;
+        padding: 0;
     }
 
-    .content__link--check-status {
+    .content__button--check-status {
         display: flex;
+        background: none;
+        border: none;
         align-items: center;
+        cursor: pointer;
         text-decoration: none;
         height: 40px;
+        padding: 0;
     }
 
     .content__links {
@@ -278,7 +286,8 @@ body {
         padding-top: 30px;
     }
 
-    .content__link-text {
+    .content__button-text {
+        font-family: 'TT Lakes';
         color: black;
         margin-right: 8px;
         /* display: flex;
