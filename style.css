@@ -168,7 +168,7 @@ body {
     width: 100%;
 }
 
-.contetnt__link--repair, .content__link--check-status {
+.contetnt__button--repair, .content__button--check-status {
     display: none;
 }
 
