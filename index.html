@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Макет 1.3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css" class="rel">
 </head>
 <body>
@@ -29,27 +30,97 @@
             </button>
     </header>
     <main class="content">
-        <div class="content__top-box">
-            <h1 class="title-1">Услуги и сервисы</h1>
-                <button class="contetnt__button--repair"><span class="content__button-text">Оставить заявку</span><img class="content__icon" src="img/ic-2/repair.svg" alt="Оставить заявку"></button>
-                <button class="content__button--check-status"><span class="content__button-text">Статус ремонта</span><img class="content__icon" src="img/ic-3/checkstatus.svg" alt="Статус ремонта"></button>
-        </div>
-        <div class="content__slide-menu">
-            <a href="#" class="content__link">Ремонтируемые бренды</a>
-            <a href="#" class="content__link">Ремонтируемые устройства</a>
-            <a href="#" class="content__link">Цены на услуги</a>
-            <a href="#" class="content__link">Адреса сервисных центров</a>
-            <a href="#" class="content__link">Специальные цены</a>
-            <a href="#" class="content__link">Отзывы</a>
-        </div>
-        <div class="description">
-            <div class="description__all-p">
-                <p class="description__p1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p class="description__p2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-                <button class="button--read-more">Читать далее</button>
+        <div class="content__description">
+            <div class="content__top-box">
+                <h1 class="title-1">Услуги и сервисы</h1>
+                    <button class="contetnt__button--repair"><span class="content__button-text">Оставить заявку</span><img class="content__icon" src="img/ic-2/repair.svg" alt="Оставить заявку"></button>
+                    <button class="content__button--check-status"><span class="content__button-text">Статус ремонта</span><img class="content__icon" src="img/ic-3/checkstatus.svg" alt="Статус ремонта"></button>
             </div>
-            <img class= "description__image" alt="Основная картинка" src="img/MG_3223.jpg">
+            <div class="content__slide-menu">
+                <a href="#" class="content__link">Ремонтируемые бренды</a>
+                <a href="#" class="content__link">Ремонтируемые устройства</a>
+                <a href="#" class="content__link">Цены на услуги</a>
+                <a href="#" class="content__link">Адреса сервисных центров</a>
+                <a href="#" class="content__link">Специальные цены</a>
+                <a href="#" class="content__link">Отзывы</a>
+            </div>
+            <div class="description">
+                <div class="description__all-p">
+                    <p class="description__p1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="description__p2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                    <button class="button--read-more">Читать далее</button>
+                </div>
+                <img class= "description__image" alt="Основная картинка" src="img/MG_3223.jpg">
+            </div>
         </div>
+        <div class="swiper__title">
+            <h3 class="swiper__title--mod">Ремонт техники различных брендов</h3>
+        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide brand-container">
+                    <img src="img/brands/Lenovo.svg" alt="Lenovo" class="swiper-slide__image">
+                    <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                  
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/Samsung.svg" alt="Samsung" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/Apple.svg" alt="Apple" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/ViewSonic.svg" alt="ViewSonic" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/Bosch.svg" alt="Bosch" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/hp.svg" alt="HP" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/acer.svg" alt="Acer" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/sony.svg" alt="Sony" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/Lenovo.svg" alt="Lenovo" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/Samsung.svg" alt="Samsung" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+              <div class="swiper-slide brand-container">
+                <img src="img/brands/Apple.svg" alt="Apple" class="swiper-slide__image">
+                <button class="swiper-slide__button button-nav"><img src="/img/brands/go.svg" alt="Подробнее" class=""></button>
+                
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
