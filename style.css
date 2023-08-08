@@ -173,14 +173,18 @@ body {
 
 .swiper {
     padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+.swiper-wrapper {
+    align-items: center;
 }
 
 .brand-container {
     min-width: 240px;
     max-width: 240px;
-    margin-right: 16px;
+    box-sizing: border-box;
     display: flex;
-    /* align-content: center; */
     background-color: #fff;
     border: 1px solid #EAEAEA;
     border-radius: 5px;
@@ -201,7 +205,6 @@ body {
     position: relative;
     background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     padding: 16px;
-    width: 100%;
     margin-bottom: 16px;
 
 }
@@ -214,10 +217,6 @@ body {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82;
-}
-
-.swiper-slide__content {
-    
 }
 
 .swiper-slide__image {
