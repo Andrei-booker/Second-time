@@ -183,6 +183,7 @@ body {
 .brand-container {
     min-width: 240px;
     max-width: 240px;
+    max-height: 72px;
     box-sizing: border-box;
     display: flex;
     background-color: #fff;
@@ -191,7 +192,7 @@ body {
     padding: 16px;
 }
 
-.swiper__title::before {
+.brands__title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -201,7 +202,7 @@ body {
     background: #D9FFF5;
 }
 
-.swiper__title{
+.brands__title{
     position: relative;
     background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     padding: 16px;
@@ -209,7 +210,7 @@ body {
 
 }
 
-.swiper__title--mod {
+.brands__title--mod {
     margin: 0;
     font-size: 16px;
     text-transform: uppercase;
@@ -240,13 +241,21 @@ body {
     display: none;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (max-width: 767px) {
-    .button-nav--call, .button-nav--chat, .button-nav--profile {
+    .button-nav--call, .button-nav--chat, .button-nav--profile, .content_brands, .buttoun--hidden, .button--show-all {
         display: none;
-    }
+    } 
 }
 
 @media (min-width: 768px) {
+
+    .swiper {
+        display: none;
+    }
 
     .header {
         padding-left: 24px;
@@ -296,9 +305,68 @@ body {
     .description__image {
         width: 50%;
     }
+
+    .content_brands {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 0 24px;
+        gap: 24px;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    .content__brands--item {
+        max-height: 72px;
+        min-width: 224px;
+        max-width: 224px;
+        box-sizing: border-box;
+        display: flex;
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+        border-radius: 5px;
+        padding: 16px;
+    }
+
+    .brands__title{
+        padding-left: 24px;
+        margin-bottom: 24px;
+    }
+
+    .button--show-all {
+        left: 24px;
+        margin-bottom: 34px;
+    }
+
+    .buttoun--hidden{
+        left: 24px;
+        cursor: pointer;
+        display: block;
+        border: none;
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        background: transparent;
+        position: relative;
+        padding-left: 32px;
+    }
+
+    .buttoun--hidden::before{
+        content: url('img/ic-up/icon-up.svg');
+        position:absolute;
+        left: 8px;
+    }
+
+    .hidden {
+        display: none;
+    }
 }
 
 @media (min-width: 1120px) {
+
+    .swiper {
+        display: none;
+    }
 
     .header {
         display: none;
