@@ -181,8 +181,6 @@ body {
 }
 
 .brand-container {
-    min-width: 240px;
-    max-width: 240px;
     max-height: 72px;
     box-sizing: border-box;
     display: flex;
