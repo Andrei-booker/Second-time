@@ -21,37 +21,45 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-let buttonShowAll = document.querySelector(".button--show-all");
-let buttonHidden = document.querySelector(".buttoun--hidden");
+let button = document.querySelector(".button--show-all");
 let tabletItems = document.querySelectorAll(".tablet-hidden");
 let desktopItems = document.querySelectorAll(".desktop-hidden");
 
-buttonShowAll.addEventListener("click", function (evt) {
+button.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (window.innerWidth < 1120) {
     for (let i = 0; i < tabletItems.length; i++) {
-      tabletItems[i].classList.remove("tablet-hidden");
+      tabletItems[i].classList.toggle("tablet-hidden");
     }
   } else {
     for (let i = 0; i < desktopItems.length; i++) {
-      desktopItems[i].classList.remove("desktop-hidden");
+      desktopItems[i].classList.toggle("desktop-hidden");
     }
   }
-  buttonHidden.classList.remove("hidden");
-  buttonShowAll.classList.add("hidden");
+  if (button.textContent === "Показать все") {
+    button.textContent = "Скрыть";
+    button.classList.toggle("button--read-more");
+    button.classList.toggle("button--hidden");
+  } else {
+    button.textContent = "Показать все";
+    button.classList.toggle("button--read-more");
+    button.classList.toggle("button--hidden");
+  }
 });
 
-buttonHidden.addEventListener("click", function (evt) {
+let descriptionButton = document.querySelector(".description-button");
+let descriptionHidden = document.querySelector(".description-hidden");
+
+descriptionButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if (window.innerWidth < 1120) {
-    for (let i = 0; i < tabletItems.length; i++) {
-      tabletItems[i].classList.add("tablet-hidden");
-    }
+  descriptionHidden.classList.toggle("description-hidden");
+  if (descriptionButton.textContent === "Читать далее") {
+    descriptionButton.textContent = "Скрыть";
+    descriptionButton.classList.toggle("button--read-more");
+    descriptionButton.classList.toggle("button--hidden");
   } else {
-    for (let i = 0; i < desktopItems.length; i++) {
-      desktopItems[i].classList.add("desktop-hidden");
-    }
+    descriptionButton.textContent = "Читать далее";
+    descriptionButton.classList.toggle("button--read-more");
+    descriptionButton.classList.toggle("button--hidden");
   }
-  buttonHidden.classList.add("hidden");
-  buttonShowAll.classList.remove("hidden");
 });

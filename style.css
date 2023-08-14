@@ -32,6 +32,10 @@ body {
     padding: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -166,6 +170,24 @@ body {
     left: 8px;
 }
 
+.button--hidden{
+    cursor: pointer;
+    display: block;
+    border: none;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 14px;
+}
+
+.button--hidden::before{
+    content: url('img/ic-up/icon-up.svg');
+    position:absolute;
+    left: 8px;
+}
+
 .description__image {
     width: 100%;
     margin-bottom: 24px;
@@ -184,6 +206,7 @@ body {
     max-height: 72px;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
     background-color: #fff;
     border: 1px solid #EAEAEA;
     border-radius: 5px;
@@ -241,6 +264,10 @@ body {
 
 .hidden {
     display: none;
+}
+
+.description-hidden {
+    display: none;;
 }
 
 @media (max-width: 767px) {
@@ -331,6 +358,7 @@ body {
         max-width: 224px;
         box-sizing: border-box;
         display: flex;
+        align-items: center;
         background-color: #fff;
         border: 1px solid #EAEAEA;
         border-radius: 5px;
@@ -345,25 +373,6 @@ body {
     .button--show-all {
         left: 24px;
         margin-bottom: 34px;
-    }
-
-    .buttoun--hidden{
-        left: 24px;
-        cursor: pointer;
-        display: block;
-        border: none;
-        font-family: 'TT Lakes';
-        font-size: 16px;
-        background: transparent;
-        position: relative;
-        padding-left: 32px;
-        margin-bottom: 14px;
-    }
-
-    .buttoun--hidden::before{
-        content: url('img/ic-up/icon-up.svg');
-        position:absolute;
-        left: 8px;
     }
 
     .hidden {
